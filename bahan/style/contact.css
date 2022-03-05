@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    position: sticky;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 80px;
+    font-family: Garamond, 'Times New Roman', Georgia, serif;
+  }
+  
+  a{
+    text-decoration: none;
+    color: white
+  }
+
+  b{
+    font-size: 35pt;
+    color: black;
+    font-style: italic;
+  }
+
+  .container {
+    margin: 0 10px;
+  }
+
+  .clearfix{
+      clear: both;
+  }
+  
+  .header {
+    padding: 10px   ;
+    width: 100%;
+    background-color: rgb(163, 1, 28);
+  }
+  
+  .header h1 {
+    color: white;
+    margin: 0;
+    padding: 20px 0;
+    height: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .header img{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    padding: 20px 0;
+  }
+
+  h1{
+	  text-align: center;
+  }
+
+  img, h1{
+      display: inline-block;
+  }
+  
+  .navbar {
+    background-color: #3552FD;
+    color: #fff;
+  }
+  
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 20px 10px;
+  }
+  
+  .navbar-menu li:hover {
+    background-color: #3552FD;
+  }
+
+  .jumbotron{
+    height: 200px;
+    background-image: url('../image/tokobunga.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  } 
+
+  .jumbotron .container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .main {
+    margin: 100px 0;
+    padding: 50px;
+    border: 2px solid #e3e3e3;
+    border-radius: 5px;
+  }
+
+  .main .form-content{
+    padding: 50px;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main .form-content{
+    margin: 10px 0;
+    border: 2px solid #e3e3e3;
+	  padding: 10px;
+	  font-size: 11pt;
+    border-radius: 3px;
+  }
+  
+  .sidebar {
+    margin-top: 40px;
+    border: 2px solid #e3e3e3;
+    border-radius: 5px;
+  }
+  .sidebar img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 0 50px;
+  }
+  .sidebar .profile-desc{
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .sidebar table th{
+      width: 70px;
+  }
+  
+
+  .footer {
+    background-color: #3552FD;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .footer span {
+    color: white;
+  }
+  
+  @media screen and (min-width: 800px) {
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  
+    .main {
+      width: calc(70% - 30px);
+      float: left;
+      margin-right: 30px;
+    }
+  
+    .sidebar {
+      width: 30%;
+      float: left;
+    }
+  
+    .profile {
+      padding: 15px;
+    }
+  }
+  
+  @media screen and (min-width: 1010px) {
+    .container {
+      padding: 0;
+    }
+  }
